@@ -11,7 +11,6 @@ I did exercises of logic and DOM handling in JavaScript
 ## Content 🚀
 This Project only has one master branch, it was a small project so it did not need more branches. <br>
 
-:computer: 27 logic exercises <br>
 
 :computer: A Single One Page with exercise handling the Document Object Model. <br>
    * Digital clock and sound alarm.
@@ -26,6 +25,7 @@ This Project only has one master branch, it was a small project so it did not ne
    * Scroll button.
    * Button for Light / Dark theme.
    
+:computer: 27 logic exercises <br>   
 
 ## Stack of technologies?  🛠️
 
@@ -33,7 +33,7 @@ This Project only has one master branch, it was a small project so it did not ne
 
 ## Demo 📦
 If you want to see how this project was, you can do it from:
-:arrow_right:   https://eugenia1984.github.io/
+:arrow_right:   https://eugenia1984.github.io/ejercicios-dom/
  
 
 ## Please: 🎁
