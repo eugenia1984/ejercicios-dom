@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es" data-dark> <!--Para aplicar a todo mi HTML el efecto de claro / oscuro-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicos del DOM</title>
+  <!--CDN de hamburguer para la X del menu hamburguesa-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
+  <!--Mi CSS-->
+  <link rel="stylesheet" href="./css/style.css"></link>
+</head>
+<body data-dark> <!--Para aplicar a todo mi HTML el efecto de claro / oscuro-->
+  <header class="header">
+    <h1>Ejercicios del DOM</h1>
+  </header>
+  <!--Boton de hamburguer CSS-->
+  <button class="panel-btn hamburger hamburger--vortex" type="button">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
+  <!--Panel del menu-->
+  <aside class="panel">
+    <nav class="menu">
+      <a href="#seccion1"> Reloj Digital y Alarma Sonora</a>
+      <a href="#seccion2"> Eventos del teclado</a>
+      <a href="#seccion3"> Cuenta regresiva</a>
+      <a href="#seccion4"> Responsive con JavaScript</a>
+      <a href="#seccion5"> Responsive Tester</a>
+      <a href="#seccion6"> Detección de Dispositivos</a>
+      <a href="#seccion7"> Detección del estado de la red</a>
+      <a href="#seccion8"> Detección de la cámara web</a>
+      <a href="#seccion9"> Geolocalización</a>
+    </nav>
+  </aside>
+  <!--Main con las secciones a las que lleva el menú-->
+  <main>
+    <!--------Seccion 1 - REloj Digital y Alarma sonora------>
+    <section id="seccion1" class="section">
+      <h2>Reloj Digital y Alarma Sonora</h2>
+      <div id="reloj">  </div>
+      <div>
+        <button id="activar-reloj">Iniciar Reloj</button>
+        <button id="desactivar-reloj">Detener Reloj</button>
+        <button id="activar-alarma">Iniciar Alarma</button>
+        <button id="desactivar-alarma">Detener Alarma</button>
+      </div>
+    </section>
+    <!--------Secicon 2 - Eventos del teclado----->
+    <section id="seccion2" class="section">
+      <h2>Eventos del teclado</h2>
+      <article class="stage">
+        <div class="ball">
+        </div>
+      </article>
+      <article><p>Utiliza las flechas ( ⬅ , ⬆  , ➡ , ⬇ ) para deslizar la pelota.</p></article>
+    <!--------Seccion 3 - Cuenta regresiva------>  
+    </section>
+    <section id="seccion3" class="section">
+      <h2>Cuenta regresiva</h2>
+      <div id="countdown"></div>
+    </section>
+    <!----Seccion 4 - Responsive Resposable JS------>
+    <section id="seccion4" class="section">
+      <h2>Responsive con JavaScript</h2>
+      <div id="youtube"></div>
+      <div id="gmaps"></div>
+    </section>
+    <!-------Seccion 5 - REsponsive Tester--------->
+    <section id="seccion5" class="section">
+      <h2>Responsive Tester</h2>
+      <form  id="responsive-tester">
+        <input name="direccion" type="url" placeholder="URL" required>
+        <br>
+        <input name="ancho" type="text" placeholder="Ancho" required>
+        <br>
+        <input name="alto" type="text" placeholder="Alto" required>
+        <br>
+        <input name="probar" type="submit" value="Probar">
+      </form>
+    </section>
+    <!------Seccion 6 Deteccion de dispositivos------>
+    <section id="seccion6" class="section">
+      <h2>Detección de Dispositivos</h2>
+      <h3>User agent</h3>
+      <div id="user-device">
+      </div>
+    </section>
+    <!----Seccion 7 Detexión de conexion----->
+    <section id="seccion7" class="section">
+      <h2>Detección de la conexión</h2>
+    </section>
+    <!---Seccion 8 Camara Web---->
+    <section id="seccion8" class="section">
+      <h2>Detección de la cámara web</h2>
+      <video id="webcam" src=""></video>
+    </section>
+    <!---Seccion 9 Geolocalizacion----->
+    <section id="seccion9" class="section">
+      <h2>Geolocalización</h2>
+      <div id="geolocation"></div>
+    </section>
+
+  </main>
+  <!--EL botón para el scroll-->
+  <button class="scroll-top-btn hidden"> &#11014;</button>
+  <!--El boton para el dark/light-->
+  <button class="dark-theme-btn"> 🌙 </button>
+
+  <!--Video 94-->
+  <script src="js/index_dom.js" type="module"></script>
+</body>
+</html>

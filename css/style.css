@@ -1,0 +1,257 @@
+/******************Reseteo********************/
+:root {
+  --main-font: sans-serif;
+  --font-size: 16px;
+  --main-color: #f7df1e;
+  --second-color: #222;
+  --main-modal-color: rgba(247, 222, 30, 0.85);
+  --second-modal-color: rgba(34, 34, 34, 0.85);
+  --container-width: 1200px;
+}
+html {
+  box-sizing: border-box;
+  font-family: var(--main-font);
+  font-size: var(--font-size);
+  scroll-behavior: smooth;
+}
+*, *:before, *:after {box-sizing: inherit;}
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/******************Menu Hamburguesa********************/
+.header {
+  position: sticky;
+  top: 0;
+  padding: 1rem;
+  background-color: var(--main-color);
+  color: var(--second-color);
+}
+.header h1 {
+  margin: 0;
+  text-align: center;
+}
+.section {
+  padding: 2rem;
+  padding-top: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: var(--container-width);
+  min-height: 100vh;
+  text-align: center;
+}
+.panel {
+  position: fixed;
+  z-index: 998;
+  /*Unnumeromenoralbotónasinolotapa*/top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  overflow-y: auto;
+  background-color: var(--second-modal-color);
+  opacity: 0;
+  visibility: hidden; /*Para que el menu no este, en realidad esta oculto, y luego al cambiar la visibilidad y la opacidad se ve*/
+  transition: transform 0.3s ease,opacity 0.5s ease;
+}
+.panel.is-active {
+  opacity: 1;  /*Para que se vea el menu al hacer click en el menu hamburguesa*/
+  visibility: visible;
+}
+.panel-btn {
+  position: fixed;
+  z-index: 999;  /*Asi me aseguro que no tenga ningun otro elemento que me tape el boton*/
+  bottom: 1vh;
+  right: 1vh;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  padding: 0;
+  display: flex;  /*Uso flexbox para alinear las rayitas del menu en el centro*/
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-color);
+}
+/**Panel del menu**/
+.menu {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.menu a {
+  padding: 1.75rem;
+  width: inherit;
+  display: block;
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: var(--main-color);
+  transition: all 0.3 ease;
+  -webkit-transition: all 0.3 ease;
+  -moz-transition: all 0.3 ease;
+  -ms-transition: all 0.3 ease;
+  -o-transition: all 0.3 ease;
+}
+.menu a:hover{
+  font-weight: bold;
+  color: var(--second-color);
+  background-color: var(--main-modal-color);
+}
+
+/****************Reloj digital y alarma sonora****************/
+
+#seccion1 button {
+  min-width: 120px;
+  min-height: 35px;
+}
+/**********Eventos del teclado************/
+
+.stage {
+  display: flex;
+  min-height: 50vh;
+  background-color: var(--second-color);
+}
+.ball {
+  margin: auto;
+  width: 4rem; /*le doy mismo ancho y alto para hacer un cuadrado*/
+  height: 4rem;
+  border-radius: 50%; /*la redondeo para hacerla pelota*/
+  background-color: var(--main-color);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+/****************Botón de scroll*************/
+
+.scroll-top-btn {
+  position: fixed;
+  z-index: 999;
+  /*Tieneelmismoz-indezqueelmenuhamburgueza*/bottom: 1vh;
+  right: calc(4.25rem + 1vh);
+  /*hagoelcalculoparanotaparelmenuhamburguesauetiene4rem*/width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  /*Loconviertoencirculo*/-webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: var(--main-color);
+  /*lepongocolordefondoycoloralaflecha*/color: var(--second-color);
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  transition:all 0.3s esase-out;
+  -moz-transition:all 0.3s esase-out;
+  -ms-transition:all 0.3s esase-out;
+  -o-transition:all 0.3s esase-out;
+  -webkit-transition:all 0.3s esase-out;
+}
+/*En el estado hover invierto los colores del boton y con una transicion*/
+.scroll-top-btn:hover {
+  background-color: var(--second-color);
+  color: var(--main-color);
+} 
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+/*********Botón de Dark / Ligth *********/
+
+.dark-theme-btn {
+  position: fixed;
+  z-index: 999;
+  /*Tieneelmismoz-indezqueelmenuhamburgueza*/bottom: 1vh;
+  left: 1vw;
+  /*hagoelcalculoparanotaparelmenuhamburguesauetiene4rem*/width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  /*Loconviertoencirculo*/-webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: var(--main-color);
+  /*lepongocolordefondoycoloralaflecha*/color: var(--second-color);
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  transition:all 0.3s esase-out;
+  -moz-transition:all 0.3s esase-out;
+  -ms-transition:all 0.3s esase-out;
+  -o-transition:all 0.3s esase-out;
+  -webkit-transition:all 0.3s esase-out;
+}
+/*En el estado hover invierto los colores del boton y con una transicion*/
+.dark-theme-btn:hover {
+  background-color: var(--second-color);
+  color: var(--main-color);
+} 
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+/*la clase dark-mode para pasar de un estado al otro*/
+.dark-mode{
+  background-color: var(--second-color);
+  color: var(--main-color);
+}
+
+/*****************Responsive Tester*********************/
+
+#responsive-tester input {
+  margin-top: 10px;
+}
+/**********User Device*************/
+#user-device ul li {
+  list-style: none;
+  line-height: 1.9;
+}
+/**************Network Status*****************/
+.online, .offline {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: #1b5e20;
+  color: #fff;
+}
+.offline {
+  background-color: #b71c1c;
+}
+/*************Seolocalizacion*********/
+#geolocation ul {
+  margin-bottom: 2rem;
+}
+#geolocation ul li {
+  list-style: none;
+  line-height: 1.9;
+}
+#geolocation a {
+  padding: 0.75rem;
+  background-color: var(--main-modal-color);
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+
+}
