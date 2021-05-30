@@ -2,7 +2,6 @@ ENGLISH
 
 # Ejercicios de JavaScrips
 
-Subtitle
 
 ## What I did 🚀
 
