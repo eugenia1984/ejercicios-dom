@@ -1,6 +1,6 @@
 ENGLISH
 
-# Ejercicios de JavaScrips
+# JavaScript Exercises
 
 
 ## What I did 🚀
@@ -23,8 +23,8 @@ This Project only has one master branch, it was a small project so it did not ne
    * Geolocation
    * Scroll button.
    * Button for Light / Dark theme.
-   
-:computer: 27 logic exercises <br>   
+   * Search Filter
+ 
 
 ## Stack of technologies?  🛠️
 
@@ -44,5 +44,52 @@ If you want to see how this project was, you can do it from:
 ---
 ## Notes
 I appreciate your interest in this Project  ⌨️ with ❤️ by [María Eugenia Costa](https://github.com/eugenia1984) 😊 and follow me at [LinkedIn](http://www.linkedin.com/in/maríaeugeniacosta) 
+---
+
+ESPAÑOL
+
+# Ejercicios de JavaScript
+
+
+## Lo que hice 🚀
+
+Hice ejercicios de lógica y manejo de DOM en JavaScript.
+
+## Contenido 🚀
+Este proyecto solo tiene una rama principal <br>
+
+:computer: Una sola página con ejercicio de manejo del Modelo de objetos de documento. <br>
+   * Reloj digital y alarma sonora.
+   * Eventos de teclado, para detectar cuando el usuario presiona alguna tecla, se usa el dedo del pie para crear los accesos directos.
+   * Cuenta regresiva.
+   * Diseño responsive responsable, cuando el usuario está viendo un sitio web desde un móvil algunos elementos, como videos o mapas, tendrán un enlace para ser visto, por lo que no necesita usar demasiado internet para descargar el video o la imagen.
+   * Probador receptivo.
+   * User Agent, para detectar desde dónde se conecta el usuario (navegador o sistema operativo) y según ello: realizar redirecciones a una URL específica o para mostrar un contenido en particular.
+   * Eventos de conexión y desconexión
+   * Detección de webcam
+   * Geolocalización
+   * Botón de desplazamiento.
+   * Botón para el tema Claro / Oscuro.
+   * Filtro de búsqueda
+ 
+
+## Tecnologías 🛠️
+
+**HTML5**, **CSS3**, **JAVASCRIPT**
+
+## Demo 📦
+Si quieres ver cómo fue este proyecto, puedes hacerlo desde:
+: arrow_right: https://eugenia1984.github.io/ejercicios-dom/
+ 
+
+## Por favor: 🎁
+
+* Comparte este proyecto con otros 📢
+* Invita una cerveza 🍺 o un café ☕ a alguien del equipo.
+* Muchas gracias 🤓.
+
+---
+## Notas
+Agradezco su interés en este Proyecto ⌨️ con ❤️ de [María Eugenia Costa](https://github.com/eugenia1984) 😊 y síganme en [LinkedIn](http://www.linkedin.com/in/maríaeugeniacosta)
 ---
 

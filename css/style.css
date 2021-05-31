@@ -237,7 +237,7 @@ img {
 .offline {
   background-color: #b71c1c;
 }
-/*************Seolocalizacion*********/
+/*************Geolocalizacion*********/
 #geolocation ul {
   margin-bottom: 2rem;
 }
@@ -253,5 +253,31 @@ img {
   -moz-border-radius: 7px;
   -ms-border-radius: 7px;
   -o-border-radius: 7px;
-
+}
+/*********Filtros de Búsqueda***********/
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+}
+.card {
+  background-color: var(--second-color);
+  color: var(--main-color);
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+}
+.card img {
+  width: 100%;
+  height: auto;
+}
+.card figcaption {
+  padding: 1rem;
+}
+/*Con JS voy a agregar la propiedad a las imagenes que no coincidan con la búsqueda, para ocultarlas*/
+.filter {
+  visibility: hidden;
+  opacity: 0;
+  order: 1; /*Con este order 1 paso adelante las trjetas que quiero se vean y paso al final las que no quiero que se vean*/
 }
