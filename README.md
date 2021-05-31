@@ -79,7 +79,7 @@ Este proyecto solo tiene una rama principal <br>
 
 ## Demo 📦
 Si quieres ver cómo fue este proyecto, puedes hacerlo desde:
-: arrow_right: https://eugenia1984.github.io/ejercicios-dom/
+:arrow_right: https://eugenia1984.github.io/ejercicios-dom/
  
 
 ## Por favor: 🎁
