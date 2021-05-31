@@ -18,9 +18,11 @@ This Project only has one master branch, it was a small project so it did not ne
    * Responsible responsive design, when the user is seeing a website from a mobile some elements, like videos o maps will have a link to be see, so they do not need to use too much internet to dowunlod the video o the image.
    * Responsive tester.
    * User Agent, to detect from where the user is connecting (browser or operating system) and according to that: make redirections to an specific URL or for displaying a particular content.
-   * Connection and disconnection events
-   * Webcam detection
-   * Geolocation
+   * Connection and disconnection events.
+   * Webcam detection.
+   * Geolocation.
+   * Search filter.
+   * Lottery
    * Scroll button.
    * Button for Light / Dark theme.
    * Search Filter
@@ -67,10 +69,12 @@ Este proyecto solo tiene una rama principal <br>
    * User Agent, para detectar desde dónde se conecta el usuario (navegador o sistema operativo) y según ello: realizar redirecciones a una URL específica o para mostrar un contenido en particular.
    * Eventos de conexión y desconexión
    * Detección de webcam
-   * Geolocalización
+   * Geolocalización.
+   * Filtro de búsqueda.
+   * Sorteo.
    * Botón de desplazamiento.
    * Botón para el tema Claro / Oscuro.
-   * Filtro de búsqueda
+   
  
 
 ## Tecnologías 🛠️

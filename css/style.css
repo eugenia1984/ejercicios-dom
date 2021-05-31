@@ -281,3 +281,7 @@ img {
   opacity: 0;
   order: 1; /*Con este order 1 paso adelante las trjetas que quiero se vean y paso al final las que no quiero que se vean*/
 }
+/**Sorteo Digital***/
+.player {
+  list-style: none;
+}
