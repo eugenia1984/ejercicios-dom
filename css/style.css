@@ -301,7 +301,7 @@ img {
 }
 .slider-slides{
   position: relative;
-  height: 450px;
+  height: 480px;
 }
 .slider-slide {
   position: absolute;
@@ -358,4 +358,56 @@ img {
 
 .slider a:hover {
   color: #4d4d4d;
+}
+/************** Scroll Spy*****************/
+@media screen and (min-width: 1024px) {
+  body {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 4rem auto;
+    grid-template-areas: 
+    "header header"
+    "main   panel";
+  }
+  main {
+    grid-area: main;
+  }
+  .header {
+    grid-area: header;
+  }
+
+  .panel {
+    grid-area: panel;
+    align-self: start;
+    position: sticky;
+    top: 4rem;
+    justify-content: flex-start;
+    background-color: var(--second-color);
+    opacity: 1;  
+    visibility: visible;
+  }
+  .panel-btn {
+    display: none;
+  }
+  .menu {
+    justify-content: start;
+    text-align: right;
+  }
+  .menu a {
+    font-size: 1rem;
+    padding: 0.60rem;
+  }
+  .menu a:hover, 
+  .menu a.active {
+    color: var(--second-color);
+    background-color: var(--main-color);
+  }
+  .scroll-top-btn {
+    right: initial;
+    left: calc(4.25rem + 1vw);
+  }
+}
+/*******SEccion 13 Video inteligente*******/
+#seccion13 video {
+  width: 90%;
 }

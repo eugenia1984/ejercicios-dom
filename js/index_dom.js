@@ -13,7 +13,8 @@ import getGeolocation from "./geolocalizacion.js";
 import searchFilters from "./filtro_busquedas.js";
 import draw from "./sorteo.js";
 import slider from "./carrusel.js";
-
+import scrollSpy from "./scroll_espia.js";
+import smartVideo from "./video_inteligente.js";
 
 const d = document;
 
@@ -57,6 +58,10 @@ d.addEventListener("DOMContentLoaded", (e)=> {  //todo se ejecuta cuando se term
     draw("#winner-btn",".player");
     //La funcion de la seccion 12 de los sliders
     slider();
+    //La funcion scroll spy para que la barra de menu en desktop vaysa cambiando de color acorde a la seccion donde estamos
+    scrollSpy();
+    //La funcion de la seccion 13 Video Inteligente
+    smartVideo();
 });
 
 d.addEventListener("keydown", (e)=>{

@@ -23,7 +23,9 @@ This Project only has one master branch, it was a small project so it did not ne
    * Geolocation.
    * Search filter.
    * Lottery.
-   * REsponsive Slider.
+   * Responsive Slider.
+   * Scroll Spy.
+   * Intelligent Video
    * Scroll button.
    * Button for Light / Dark theme.
 
@@ -72,6 +74,8 @@ Este proyecto solo tiene una rama principal <br>
    * Filtro de búsqueda.
    * Sorteo.
    * Carrusel responsivo.
+   * Scroll Spy.
+   * Video inteligente
    * Botón de desplazamiento.
    * Botón para el tema Claro / Oscuro.
    
