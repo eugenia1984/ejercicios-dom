@@ -12,6 +12,7 @@ import webCam from "./deteccion_webcam.js";
 import getGeolocation from "./geolocalizacion.js";
 import searchFilters from "./filtro_busquedas.js";
 import draw from "./sorteo.js";
+import slider from "./carrusel.js";
 
 
 const d = document;
@@ -52,8 +53,10 @@ d.addEventListener("DOMContentLoaded", (e)=> {  //todo se ejecuta cuando se term
     getGeolocation("geolocation");
     //La funcion de la seccion 10 del Filtro de busqueda
     searchFilters(".card-filter",".card");
-    //La funcion de la secicon 11 del Sorteo
+    //La funcion de la seccion 11 del Sorteo
     draw("#winner-btn",".player");
+    //La funcion de la seccion 12 de los sliders
+    slider();
 });
 
 d.addEventListener("keydown", (e)=>{

@@ -26,6 +26,7 @@ img {
 /******************Menu Hamburguesa********************/
 .header {
   position: sticky;
+  z-index: 997; /*Para que el slider que tiene position relative no me lo tape*/
   top: 0;
   padding: 1rem;
   background-color: var(--main-color);
@@ -217,12 +218,14 @@ img {
 #responsive-tester input {
   margin-top: 10px;
 }
-/**********User Device*************/
+
+/************User Device***************/
 #user-device ul li {
   list-style: none;
   line-height: 1.9;
 }
-/**************Network Status*****************/
+
+/***************Network Status******************/
 .online, .offline {
   position: sticky;
   top: 0;
@@ -237,7 +240,8 @@ img {
 .offline {
   background-color: #b71c1c;
 }
-/*************Geolocalizacion*********/
+
+/**************Geolocalizacion*************/
 #geolocation ul {
   margin-bottom: 2rem;
 }
@@ -254,7 +258,8 @@ img {
   -ms-border-radius: 7px;
   -o-border-radius: 7px;
 }
-/*********Filtros de Búsqueda***********/
+
+/*************Filtros de Búsqueda************/
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
@@ -281,7 +286,76 @@ img {
   opacity: 0;
   order: 1; /*Con este order 1 paso adelante las trjetas que quiero se vean y paso al final las que no quiero que se vean*/
 }
-/**Sorteo Digital***/
+
+/**********Sorteo Digital*********/
 .player {
   list-style: none;
+}
+
+/************Responsive Slider**********/
+.slider {
+  position: relative;
+  width: 86%;
+  margin: 1rem auto;
+  text-align: center;
+}
+.slider-slides{
+  position: relative;
+  height: 450px;
+}
+.slider-slide {
+  position: absolute;
+  top:0;
+  left:0;
+  height: 100%;
+  width: 100%;
+  opacity: 0; /*solo oculto le contenido pero sigue estando*/
+  visibility: hidden;
+  transition: opacity 1s ease;
+  -webkit-transition: opacity 1s ease;
+  -moz-transition: opacity 1s ease;
+  -ms-transition: opacity 1s ease;
+  -o-transition: opacity 1s ease;
+}
+.slider-slide img {
+  height: inherit;
+  width: inherit;
+  object-fit: cover;
+  object-position: 50% 10%;
+}
+.slider-slide.active {
+  opacity: 1;
+  visibility: visible;
+}
+.slider-btns {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.slider a {
+  display: block;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: thin solid #000;
+  text-decoration: none;
+  background-color: #fff;
+  color: #000;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.slider a:hover {
+  color: #4d4d4d;
 }

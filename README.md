@@ -22,11 +22,10 @@ This Project only has one master branch, it was a small project so it did not ne
    * Webcam detection.
    * Geolocation.
    * Search filter.
-   * Lottery
+   * Lottery.
+   * REsponsive Slider.
    * Scroll button.
    * Button for Light / Dark theme.
-   * Search Filter
- 
 
 ## Stack of technologies?  🛠️
 
@@ -72,6 +71,7 @@ Este proyecto solo tiene una rama principal <br>
    * Geolocalización.
    * Filtro de búsqueda.
    * Sorteo.
+   * Carrusel responsivo.
    * Botón de desplazamiento.
    * Botón para el tema Claro / Oscuro.
    
