@@ -9,7 +9,7 @@ export default function scrollSpy() {
     entries.forEach((entry) => {
       //console.log("entry", entry);
       const id = entry.target.getAttribute("id");
-      console.log(id);
+      //console.log(id);
       if(entry.isIntersecting) {
         //Si es verdadero le agrego la clase active y asocio la seccion con el link del menu que tiene el mismo numero de seccion
         d.querySelector(`a[data-scroll-spy][href="#${id}"]`).

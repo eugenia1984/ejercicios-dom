@@ -407,7 +407,95 @@ img {
     left: calc(4.25rem + 1vw);
   }
 }
-/*******SEccion 13 Video inteligente*******/
+
+/*******Seccion 13 Video inteligente*******/
 #seccion13 video {
   width: 90%;
+}
+
+/************SEccion 14 Validacion de Formularios**********/
+.contact-form {
+  --form-ok-color: #333333;
+  --form-error-color: #f44336;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+.contact-form>* {
+  padding: 0.5rem;
+  margin: 1rem auto;
+  display:block;
+  width: 100%;
+}
+.contact-form textarea {
+  resize: none;  /*Para que el textarea no pueda ser redimensionado, que no tenga la esquina abajo a la derrecha para redimensionar, queda al 100% de ancho de lo que ocupa el formulario*/
+}
+.contact-form legend,
+.contact-form-response {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-size: 1rem;
+  font-family: sans-serif;
+}
+
+.contact-form input[type="submit"] {
+  width: 50%;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+
+.contact-form *::placeholder {
+  color: #000;
+}
+
+.contact-form [required]:valid {
+  border: thin solid var(--form-ok-color);
+}
+
+.contact-form [required]:invalid {
+  border: thin solid var(--form-error-color);
+}
+
+.contact-form-error {
+  margin-top: -1rem; /*para que este pegado al input*/
+  font-size: 80%;
+  background-color: var(--form-error-color);
+  color: #fff;
+  transition: all 800ms ease; /*para que aparezcan y desaparezcan con animacion*/
+  -webkit-transition: all 800ms ease;
+  -moz-transition: all 800ms ease;
+  -ms-transition: all 800ms ease;
+  -o-transition: all 800ms ease;
+}
+
+.contact-form-error.is-active {
+  display: block;
+  animation: show-message 1s 1 normal 0s ease-out both;
+  -webkit-animation: show-message 1s 1 normal 0s ease-out both;
+}
+
+.none {
+  display: none;
+}
+
+@keyframes show-message {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
 }

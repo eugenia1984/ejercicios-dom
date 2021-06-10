@@ -25,7 +25,8 @@ This Project only has one master branch, it was a small project so it did not ne
    * Lottery.
    * Responsive Slider.
    * Scroll Spy.
-   * Intelligent Video
+   * Intelligent Video.
+   * Contact Form validations.
    * Scroll button.
    * Button for Light / Dark theme.
 
@@ -75,7 +76,8 @@ Este proyecto solo tiene una rama principal <br>
    * Sorteo.
    * Carrusel responsivo.
    * Scroll Spy.
-   * Video inteligente
+   * Video inteligente.
+   * Validaciones de formularios
    * Botón de desplazamiento.
    * Botón para el tema Claro / Oscuro.
    

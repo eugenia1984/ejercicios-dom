@@ -15,6 +15,7 @@ import draw from "./sorteo.js";
 import slider from "./carrusel.js";
 import scrollSpy from "./scroll_espia.js";
 import smartVideo from "./video_inteligente.js";
+import contactFormValidations from "./validaciones_formulario.js";
 
 const d = document;
 
@@ -62,6 +63,8 @@ d.addEventListener("DOMContentLoaded", (e)=> {  //todo se ejecuta cuando se term
     scrollSpy();
     //La funcion de la seccion 13 Video Inteligente
     smartVideo();
+    //La funcion de la seccion 14 Validacion de formulario
+    contactFormValidations();
 });
 
 d.addEventListener("keydown", (e)=>{

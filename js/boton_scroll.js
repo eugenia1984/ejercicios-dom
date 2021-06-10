@@ -15,7 +15,7 @@ export default function scrollTopButtom(btn) {
       //agrego la clase hidden del boton de scroll
       $scrollBtn.classList.add("hidden");
     }
-    console.log(w.pageYOffset, d.documentElement.scrollTop);
+    //console.log(w.pageYOffset, d.documentElement.scrollTop);
   });
   //Para que cuando este el boton de scroll y le haga click me suba hacia arriba
   d.addEventListener("click", (e) => {

@@ -36,6 +36,7 @@
       <a href="#seccion11" data-scroll-spy>Sorteo Digital</a>
       <a href="#seccion12" data-scroll-spy>Responsive Slider</a>
       <a href="#seccion13" data-scroll-spy>Video Inteligente</a>
+      <a href="#seccion14" data-scroll-spy>Validaciones de formulario</a>
     </nav>
   </aside>
   <!--Main con las secciones a las que lleva el menú-->
@@ -206,6 +207,30 @@
       <br>
       <br>
       <video src="./assets/sun_shining_palm_tree.mp4" muted controls loop data-smart-video></video>
+    </section>
+    <!---Seccion 14 Video Inteligentey--->
+    <section id="seccion14" class="section" data-scroll-spy>
+      <h2>Validaciones de formulario</h2>
+      <form class="contact-form" action="https://formsubmit.co/costamariaeugenia1@gmail.com" method="POST" target="_blank">
+        <legend>Envianos tus comentarios</legend>
+        <!--Nombre-->
+        <input type="text" name="name" placeholder="Escribe tu nombre" title="Nombre sólo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+        <!--Email-->
+        <input type="email" name="email" placeholder="Escribe tu correo electrónico" title="Email incorrecto" pattern="^^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+        <!--Asunto-->
+        <input type="text" name="asunto" placeholder="Asunto a tratar" title="El asunto es requerido" required>
+        <!--TextArea-->
+        <textarea name="comments" cols="50" rows="5" placeholder="Escribe tu comentario..." title="Tu comentario no debe exceder los 255 caracteres" data-pattern="^.{1,255}$" required></textarea>
+          <!--Submit-->
+        <input type="submit" value="Enviar">
+        <div class="contact-form-loader none">
+          <img src="./assets/oval.svg" alt="cargando">
+        </div>
+        <div class="contact-form-response none">
+          <p>Los datos han sido enviados.</p>
+        </div>
+      </form>
+
     </section>
   </main>
   <!--EL botón para el scroll-->
