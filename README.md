@@ -2,18 +2,23 @@ ENGLISH
 
 # JavaScript Exercises
 
+---
 
 ## What I did 🚀
 
 I did exercises of logic and DOM handling in JavaScript
 
+---
+
 ## Content 🚀
-This Project only has one master branch, it was a small project so it did not need more branches. <br>
+
+This Project only has one master branch, it was a small project so it did not need more branches. 
 
 
-:computer: A Single One Page with exercise handling the Document Object Model. <br>
-   * Digital clock and sound alarm.
-   * Keyboard events, to detected when the user press some key, it`s use toe create the shortcuts.
+:computer: A Single One Page with exercise handling the Document Object Model. 
+
+   * Digital clock and sound alarm [see here](https://eugenia1984.github.io/ejercicios-dom/#seccion1)
+   * Keyboard events, to detected when the user press some key, it's use to create the shortcuts.
    * Countdown.
    * Responsible responsive design, when the user is seeing a website from a mobile some elements, like videos o maps will have a link to be see, so they do not need to use too much internet to dowunlod the video o the image.
    * Responsive tester.
