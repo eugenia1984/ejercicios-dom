@@ -40,7 +40,7 @@ This Project only has one master branch, it was a small project so it did not ne
 
 **HTML5** , **CSS3** , **JAVASCRIPT**
 
---
+---
 
 ## Demo 📦
 
