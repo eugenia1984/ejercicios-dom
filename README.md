@@ -17,10 +17,10 @@ This Project only has one master branch, it was a small project so it did not ne
 
 :computer: A Single One Page with exercise handling the Document Object Model. 
 
-   * Digital clock and sound alarm [see here](https://eugenia1984.github.io/ejercicios-dom/#seccion1)
-   * Keyboard events, to detected when the user press some key, it's use to create the shortcuts.
-   * Countdown.
-   * Responsible responsive design, when the user is seeing a website from a mobile some elements, like videos o maps will have a link to be see, so they do not need to use too much internet to dowunlod the video o the image.
+   * [Digital clock and sound alarm](https://eugenia1984.github.io/ejercicios-dom/#seccion1)
+   * [Keyboard events, to detected when the user press some key, it's use to create the shortcuts](https://eugenia1984.github.io/ejercicios-dom/#seccion2)
+   * [Countdown](https://eugenia1984.github.io/ejercicios-dom/#seccion3)
+   * [Responsible responsive design, when the user is seeing a website from a mobile some elements, like videos o maps will have a link to be see, so they do not need to use too much internet to dowunlod the video o the image](https://eugenia1984.github.io/ejercicios-dom/#seccion4)
    * Responsive tester.
    * User Agent, to detect from where the user is connecting (browser or operating system) and according to that: make redirections to an specific URL or for displaying a particular content.
    * Connection and disconnection events.
