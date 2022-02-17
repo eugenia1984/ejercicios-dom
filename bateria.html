@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bateria.css">
+  <title>Bateria con JS</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/img/bateria.png" type="image/x-icon">
+  <!--Para el SEO -->
+  <meta name="description"
+  content="Hola bienvenidos! Soy Maria Eugenia Costa y estoy practicando con JavaScript">
+  <link rel="apple-touch-icon" href="./assets/img/bateria.png">
+  <meta name="theme-color" content="#d5197a">
+  <meta name="twitter:card" content="summary">
+  <meta property="og:type" content="website">
+  <meta property="og:title" name="twitter:title" content="Bateria con JS">
+  <meta property="og:description" name="twitter:description"
+    content="Hola bienvenidos! Soy Maria Eugenia Costa y estoy practicando JavaScript">
+  <meta property="og:image" name="twitter:image"
+    content="./assets/img/bateria.png">
+  <meta property="og:url" name="twitter:url"
+    content="https://eugenia1984.github.io/ejercicios-dom/bateria">
+</head>
+<body>
+  <header class="header">
+    <h1>Batería simulada con JS</h1>
+    <h2>Solo presiona la letra para escuchar</h2>
+  </header>
+  <section class="container">
+    <section class="keys">
+      <div data-key="65" class="key">
+        <kbd>A</kbd>
+        <span class="sound">clap</span>
+      </div>
+      <div data-key="83" class="key">
+        <kbd>S</kbd>
+        <span class="sound">hihat</span>
+      </div>
+      <div data-key="68" class="key">
+        <kbd>D</kbd>
+        <span class="sound">kick</span>
+      </div>
+      <div data-key="70" class="key">
+        <kbd>F</kbd>
+        <span class="sound">openhat</span>
+      </div>
+      <div data-key="71" class="key">
+        <kbd>G</kbd>
+        <span class="sound">boom</span>
+      </div>
+      <div data-key="72" class="key">
+        <kbd>H</kbd>
+        <span class="sound">ride</span>
+      </div>
+      <div data-key="74" class="key">
+        <kbd>J</kbd>
+        <span class="sound">snare</span>
+      </div>
+      <div data-key="75" class="key">
+        <kbd>K</kbd>
+        <span class="sound">tom</span>
+      </div>
+      <div data-key="76" class="key">
+        <kbd>L</kbd>
+        <span class="sound">tink</span>
+      </div>
+    </section>
+  </section>
+
+  <audio data-key="65" src="./assets/sounds/clap.wav"></audio>
+  <audio data-key="83" src="./assets/sounds/hihat.wav"></audio>
+  <audio data-key="68" src="./assets/sounds/kick.wav"></audio>
+  <audio data-key="70" src="./assets/sounds/openhat.wav"></audio>
+  <audio data-key="71" src="./assets/sounds/boom.wav"></audio>
+  <audio data-key="72" src="./assets/sounds/ride.wav"></audio>
+  <audio data-key="74" src="./assets/sounds/snare.wav"></audio>
+  <audio data-key="75" src="./assets/sounds/tom.wav"></audio>
+  <audio data-key="76" src="./assets/sounds/tink.wav"></audio>
+  <script src="./js/bateria.js"></script>
+</body>
+</html>

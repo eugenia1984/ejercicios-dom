@@ -34,6 +34,14 @@ This Project only has one master branch, it was a small project so it did not ne
    * Scroll button.
    * Button for Light / Dark theme.
 
+And as an extra I made 3 exercises practising JS vanilla.   
+
+- Battery that detects the keys you press on the keyboard
+
+ - Analog clock that obtains the seconds and performs rotations in CSS.
+
+ - CSS variables, with the **EventListener** : *change* and *mouseover*.
+ 
 ---
 
 ## Stack of technologies?  🛠️
@@ -96,7 +104,15 @@ Este proyecto solo tiene una rama principal
    * [Validaciones de formularios](https://eugenia1984.github.io/ejercicios-dom/#seccion16)
    * Botón de desplazamiento.
    * Botón para el tema Claro / Oscuro.
-   
+
+ Y como extra hice 3 ejerciicos con Vanilla JavaScript:
+
+ - Batería que detecta las teclas que oprimis en el teclado
+
+ - Reloj analogo que obtiene los segundos y realiza rotaciones en CSS.
+
+ - Variables de CSS, con los **EventListener** : *change* y *mouseover*.
+
  ---
 
 ## Tecnologías 🛠️

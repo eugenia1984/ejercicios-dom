@@ -4,17 +4,33 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ejercicos del DOM</title>
+  <title>Ejercicios de práctica con JS</title>
   <!--CDN de hamburguer para la X del menu hamburguesa-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
   <!--Mi CSS-->
-  <link rel="stylesheet" href="./css/style.css"></link>
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- Favicon-->
+  <link rel="shortcut icon" href="./assets/img/js.png" type="image/x-icon">
+  <!--Para el SEO -->
+  <meta name="description"
+  content="Hola bienvenidos! Soy Maria Eugenia Costa y veras mis ejercicios de practica con JavaScript">
+  <link rel="apple-touch-icon" href="./assets/img/js.png">
+  <meta name="theme-color" content="#d5197a">
+  <meta name="twitter:card" content="summary">
+  <meta property="og:type" content="website">
+  <meta property="og:title" name="twitter:title" content="Ejercicios de practica con JS">
+  <meta property="og:description" name="twitter:description"
+    content="Hola bienvenidos! Soy Maria Eugenia Costa y veras mis ejercicios para practica con JavaScript">
+  <meta property="og:image" name="twitter:image"
+    content="./assets/img/js.png">
+  <meta property="og:url" name="twitter:url"
+    content="https://eugenia1984.github.io/ejercicios-dom">
 </head>
 <body data-dark> <!--Para aplicar a todo mi HTML el efecto de claro / oscuro-->
   <header class="header">
     <h1>Ejercicios del DOM</h1>
   </header>
-  <!--Boton de hamburguer CSS-->
+  <!--Boton de hamburguesa CSS-->
   <button class="panel-btn hamburger hamburger--vortex" type="button">
     <span class="hamburger-box">
       <span class="hamburger-inner"></span>
@@ -37,6 +53,8 @@
       <a href="#seccion12" data-scroll-spy>Responsive Slider</a>
       <a href="#seccion13" data-scroll-spy>Video Inteligente</a>
       <a href="#seccion14" data-scroll-spy>Validaciones de formulario</a>
+      <a href="#seccion14" data-scroll-spy>Validaciones de formulario</a>
+      <a href="#seccion15" data-scroll-spy>3 practicas con JS vanilla</a>
     </nav>
   </aside>
   <!--Main con las secciones a las que lleva el menú-->
@@ -52,7 +70,7 @@
         <button id="desactivar-alarma">Detener Alarma</button>
       </div>
     </section>
-    <!--------Secicon 2 - Eventos del teclado----->
+    <!--------Seccion 2 - Eventos del teclado----->
     <section id="seccion2" class="section" data-scroll-spy>
       <h2>Eventos del teclado</h2>
       <article class="stage">
@@ -230,6 +248,21 @@
           <p>Los datos han sido enviados.</p>
         </div>
       </form>
+    </section>
+    <!--Seccion 15 - 30 practicas con JS vanilla-->
+    <section id="seccion15" class="section" data-scroll-spy>
+      <h2>3 prácticas con JavaScript vanilla</h2>
+      <section class="row links-exercises">
+        <article class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <p><a href="bateria.html" target="_blank" rel="noopener noreferrer"> Batería con JS</a></p>
+        </article>
+        <article class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <p><a href="reloj.html" target="_blank" rel="noopener noreferrer">Reloj CSS + JS</a></p>
+        </article>
+        <article class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+          <p><a href="variables_css.html" target="_blank" rel="noopener noreferrer">Variables de CSS</a></p>
+        </article>
+      </section>
 
     </section>
   </main>

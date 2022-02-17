@@ -1,0 +1,64 @@
+/*  Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::after, *::before {box-sizing: inherit;}
+
+:root {
+  --base: #ffc600;
+  --spacing: 10px;
+  --blur: 10px;
+  --color-blue: #193549;
+  --color-white: #fff;
+}
+
+body {
+  background: var(--color-blue);
+  color: var(--color-white);
+  font-family: 'helvetica neue', sans-serif;
+  font-weight: 100;
+  font-size: 1rem;
+}
+
+/* Header*/
+h1 {
+  font-size: 1.75rem;
+  letter-spacing: 0.15rem;
+  padding: 2rem 0.25rem;
+  text-align: center;
+}
+
+/* Section controls*/
+
+label, input {
+  display: inline-block;
+  width: 50%;
+  margin-bottom: 1rem;
+}
+
+label {
+  text-align: right;
+}
+
+img {
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur));
+  width: 80%;
+  margin: 10%;
+}
+
+.hl {
+  color: var(--base);
+}
+
+.controls {
+  margin-bottom: 50px;
+}
+
+input {
+  width: 100px;
+}
