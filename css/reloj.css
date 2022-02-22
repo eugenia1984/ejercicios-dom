@@ -7,6 +7,7 @@
   --color-black: rgb(0, 0, 0);
   --color-blak-light: rgba(0,0,0,0.1);
   --color-black-lighter: rgba(0,0,0,0.2);
+  --color-red: rgb(243, 11, 11);
   --roboto: 'Roboto', sans-serif;
 }
 
@@ -107,7 +108,7 @@ header { width: 100%;}
 }
 
 .min-hand {
-  background-color: var(--color-black);
+  background-color: var( --color-red);
 }
 .second-hand {
   background-color: var(--color-gray-dark);
