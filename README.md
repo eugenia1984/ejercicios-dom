@@ -42,6 +42,16 @@ And as an extra I made 3 exercises practising JS vanilla.
 
  - CSS variables, with the **EventListener** : *change* and *mouseover*.
  
+ - Image gallery using CSS and JavaScript, with the **EventLlistener**: *click* and *transitionend*, in addition to using *querySelectorAll()* to select the labels that have the *panel* class.
+
+Writing the name of a city or state of the United States, having a filter of the letters entered with a list of Cities and States obtained from the JSON [https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities. json](https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json), I use **promises** with *fetch()* and *then()*.
+
+ I also use the **EventListener**: *change* and *keyup* to detect the letters that are entered.
+
+ And some array methods, like: *.filter()* and *.map()*, along with the use of **regular expressions**.
+
+ - Canvas, using the HTML canvas to be able to draw with the mouse on the web
+ 
 ---
 
 ## Stack of technologies?  🛠️
@@ -112,6 +122,18 @@ Este proyecto solo tiene una rama principal
  - Reloj analogo que obtiene los segundos y realiza rotaciones en CSS.
 
  - Variables de CSS, con los **EventListener** : *change* y *mouseover*.
+
+ - Array, donde practico algunos métodos de los arrays.
+
+ - Galeria de imagenes utilizando CSS y JavaScript, con los **EventLlistener**: *click* y *transitionend*, además de utilizar *querySelectorAll()* para seleccionar las etiquetas que tienen la clase *panel*.
+
+ - Escribiendo el nombre de una ciudad o estado de Estados Unidos, teniendo un filtro de las letras introducidas con un listado de Ciudades y Estados obtenidos del JSON [https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json](https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json), utilizo **promesas** con *fetch()* y *then()*.
+
+ También utilizo los **EventListener**: *change* y *keyup* para detectar las letras que se ingresan.
+
+ Y algunos métodos de arrays, como: *.filter()* y *.map()*, junto a la utilización de **expresiones regulares**.
+
+- Canvas, utilizando el canvas de HTML para poder dibujar con el mouse en la web.
 
  ---
 
