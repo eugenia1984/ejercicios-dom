@@ -130,7 +130,46 @@
     <code class="format pl-1">return obj; </code>  
     <code class="format"> }, {});</code>   
     <p>Para verlo en consola:</p> 
-    <code class="format">console.log(transportation); </code>     
+    <code class="format">console.log(transportation); </code>
+    <p>✔ Tengo el arreglo guardado en la constante <strong>peopele2</strong> que tiene como elementos objetos(personas, con atributos de nombre y año de nacimiento).</p> 
+    <code class="format">const people2 = [</code>    
+    <code class="format pl-1"> { name: 'Wes', year: 1988 },</code> 
+    <code class="format pl-1"> { name: 'Kait', year: 1986 },</code> 
+    <code class="format pl-1"> { name: 'Irv', year: 1970 },</code> 
+    <code class="format pl-1"> { name: 'Lux', year: 2015 }</code> 
+    <code class="format"> ];</code> 
+    <p>Voy a utilizar el metodo <strong>.some()</strong>  para ver si hay mayores de edad:</p>
+    <code class="format">const isAdult = people2.some(person => ((new Date()).getFullYear()) - person.year >= 18);</code>
+    <p>Y lo muestro por consola:</p>
+    <code class="format">console.log({isAdult});</code>
+    <p>Y como el método <strong>.some()</strong> me da como resultado <strong>true</strong> si al menos uno de los elementos cumple con la condición, entonces veo en consola <strong>true</strong></p>
+    <p>Pero si utilizo el método <strong>.every()</strong>, todos los elementos deben sumplir con la condición, y como eso no sucede, voy a ver <strong>false</strong>:</p>
+    <code class="format">const allAdults = people2.every(person => ((new Date()).getFullYear()) - person.year >= 19);</code>
+    <p>Para verlo por consola:</p>
+    <code class="format">console.log({allAdults});</code>
+    <p>>✔ Tengo un nuevo arreglo guardado en la constante <strong>comments</strong>, cada elemento es un objeto con un texto y un id</p>
+    <code class="format">const comments = [</code>
+    <code class="format pl-1">{ text: 'Love this!', id: 523423 },</code>
+    <code class="format pl-1">{ text: 'Super good', id: 823423 },</code>
+    <code class="format pl-1">{ text: 'You are the best', id: 2039842 },</code>
+    <code class="format pl-1">{ text: 'Ramen is my fav food ever', id: 123523 },</code>
+    <code class="format pl-1">{ text: 'Nice Nice Nice!', id: 542328 }</code>
+    <code class="format">];</code>
+    <p>Con este nuevo array comments voy a utilizar el metodo find(), que es parecido a .filter(), pero en vez de retornar solo el que estoy buscando. Voy a buscar el comment con ID de 823423:</p>
+    <code class="format">const comment = comments.find(comment => comment.id === 823423);</code>
+    <p>Lo veo en consola:</p>
+    <code class="format">console.log(comment);</code>
+    <p>✔ Y ahora para utilizar le metodo <strong>.findIndex()</strong>, voy a buscar en que posicion se encuentra el elemento que tiene como ID: 823423.</p>
+    <code class="format">const index = comments.findIndex(comment => comment.id === 823423)</code>
+    <p>Para verlo en consola:</p>
+    <code class="format">console.log(index);</code>
+    <p>✔ Y ahora voy a eliminar ese elemento, lo podría hacer utilizando el método .splice(index,1); pero mejor voy a utilizar el método .slice(); y lo voy a guardar en la nueva constante llamada <strong>newComments</strong></p>
+    <code class="format">const newComments = [</code>
+    <code class="format pl-1">...comments.slice(0, index),</code>
+    <code class="format pl-1">...comments.slice(index + 1)</code>
+    <code class="format">];</code>
+    <p>Para verlo por consola:</p>
+    <code class="format">console.log(newComments);</code>
   </main>
   <footer class="footer">
     <p>Gracias por ver mi práctica</p>

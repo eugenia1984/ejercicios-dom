@@ -88,3 +88,58 @@ const transportation = data.reduce(function(obj, item) {
 }, {});
 
 console.log(transportation);
+
+// Con este array de objetos de personas voy a utilizar el metodo .some() para ver si hay mayores de edad
+// Con el método some() con que al menos un elemento cumpla la condicion ya voy a tener como resultado true
+const people2 = [
+  { name: 'Wes', year: 1988 },
+  { name: 'Kait', year: 1986 },
+  { name: 'Irv', year: 1970 },
+  { name: 'Lux', year: 2015 }
+];
+
+
+// Una forma de hacerlo
+/*
+Array.prototype.some() 
+  const isAdult = people.some(function(person) {
+    const currentYear = (new Date()).getFullYear();
+    if(currentYear - person.year >= 18) {
+    return true;
+    }
+  });
+*/
+
+//Otra forma de hacerlo
+const isAdult = people2.some(person => ((new Date()).getFullYear()) - person.year >= 18);
+
+console.log({isAdult});
+
+//Ahora utilizo el metodo .every() el cual solo va a dar como resultado true si todos los elementos cumplen con la condicion, es decir si toods fueran mayores de edad
+const allAdults = people2.every(person => ((new Date()).getFullYear()) - person.year >= 19);
+console.log({allAdults});
+
+// Con este nuevo array comments voy a utilizar el metodo find(), que es parecido a .filter(), pero solo retornar el primer item que encuentra. Voy a buscar el comment con ID de 823423
+const comments = [
+  { text: 'Love this!', id: 523423 },
+  { text: 'Super good', id: 823423 },
+  { text: 'You are the best', id: 2039842 },
+  { text: 'Ramen is my fav food ever', id: 123523 },
+  { text: 'Nice Nice Nice!', id: 542328 }
+];
+
+const comment = comments.find(comment => comment.id === 823423);
+
+console.log(comment);
+
+// Y ahora para utilizar le metodo .findIndex(), voy a buscar en que posicion se encuentra el elemento que tiene como ID: 823423
+const index = comments.findIndex(comment => comment.id === 823423);
+console.log(index);
+
+// Y ahora voy a eliminar ese elemento, lo podría hacer utilizando el método .splice(index,1); pero mejor voy a utilizar el método .slice();
+
+const newComments = [
+  ...comments.slice(0, index),
+  ...comments.slice(index + 1)
+];
+console.log(newComments);
