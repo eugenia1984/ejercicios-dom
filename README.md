@@ -52,6 +52,9 @@ Writing the name of a city or state of the United States, having a filter of the
 
  - Canvas, using the HTML canvas to be able to draw with the mouse on the web
  
+ - Dev Tools
+
+
 ---
 
 ## Stack of technologies?  🛠️
@@ -134,6 +137,9 @@ Este proyecto solo tiene una rama principal
  Y algunos métodos de arrays, como: *.filter()* y *.map()*, junto a la utilización de **expresiones regulares**.
 
 - Canvas, utilizando el canvas de HTML para poder dibujar con el mouse en la web.
+
+- Dev Tools
+
 
  ---
 
