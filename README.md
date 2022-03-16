@@ -56,6 +56,8 @@ Writing the name of a city or state of the United States, having a filter of the
 
 - Checkboxes, the following is a common layout you would see in an email client. When a user clicks a checkbox, holds Shift, and then clicks another checkbox a few rows down, all the checkboxes in-between those two checkboxes should be checked.
 
+- Video player with custom buttons.
+
 ---
 
 ## Stack of technologies?  🛠️
@@ -142,6 +144,8 @@ Este proyecto solo tiene una rama principal
 - Dev Tools
 
 - Checkboxes, es un diseño común que vería en un cliente de correo electrónico. Cuando un usuario hace clic en una casilla de verificación, mantiene presionada la tecla Mayús y luego hace clic en otra casilla de verificación unas filas más abajo, todas las casillas de verificación entre esas dos casillas de verificación deben estar marcadas.
+
+- Reproductor de video con botones personalizados.
 
  ---
 
